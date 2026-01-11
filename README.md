@@ -1,143 +1,280 @@
-# SplitIt - Smart Receipt Bill Splitter
+# SplitIt
 
-A hackathon project by **Kunsang, Jordan, Ruhan & Andrew** that makes splitting bills effortless!
+## The Hook
 
-## 💡 Inspiration
+**Money doesn't ruin moments because of math — it ruins moments because of awkwardness.**
 
-We wanted to solve a real problem, one that everyone faces every day: financial clarity. In a world full of subscriptions, impulse purchases, and hidden fees, managing your wallet shouldn't feel like a puzzle. Our idea was simple: **Clarity before you act**. We wanted to build something that helps people understand their spending before they swipe, not after.
+## The Promise
 
-## 🎯 What It Does
+**SplitIt keeps things fair, clear, and calm when people spend together.**
 
-Split helps you manage your wallet smarter. It analyzes your transactions, gives real-time spending insights, and provides personalized advice to help you make better financial decisions. Whether you're debating that next purchase or tracking your weekly budget, SplitIt acts like a calm, data-driven advisor, helping you take control of your money, not the other way around.
+---
 
-## 🚀 Features
+## Why Now
 
-- **📸 AI Receipt Scanning**: Upload any receipt photo and let AI extract all items automatically
-- **👥 Smart Bill Splitting**: Assign items to specific people for fair, precise splits
-- **💰 Proportional Tax Distribution**: Tax is automatically distributed based on each person's share
-- **🎯 Real-time Calculations**: See exactly how much each person owes instantly
-- **📱 Mobile-Friendly**: Works perfectly on phones for on-the-go splitting
+We split payments constantly:
 
-## 🛠️ How We Built It
+- 🍽️ Group dinners
+- ✈️ Trips
+- 🏠 Roommates
+- 🎉 Events
+- 📱 Shared subscriptions
 
-We built SplitIt using:
+But the tools are either:
 
-- **Next.js + TypeScript** for the frontend
-- **TailwindCSS** for a sleek, minimal UI
-- **Google Gemini API** for AI-driven receipt analysis and spending categorization
-- **Node.js backend** with real-time data processing
-- **Vercel** for seamless deployment
+- **Too manual** — Venmo notes + calculators = messy, error-prone, awkward
+- **Too heavy** — Finance apps, spreadsheets = overkill for a simple moment
 
-Our workflow was fully collaborative; design, logic, and testing moved together in sync.
+**SplitIt lives in between.**
 
-## ⚠️ Challenges We Ran Into
+---
 
-We faced challenges balancing AI complexity with simplicity. Our goal wasn't just to build a dashboard, it was to build something that feels alive, something that understands the user without overwhelming them. Integrating the Gemini API with personalized data while maintaining privacy and performance was also tricky. We had to fine-tune prompts, smooth out API latency, and handle dataset variations in real time.
+## The Product Vision
 
-## 🏆 Accomplishments We're Proud Of
+### Phase 1: "Calm Split" (MVP)
 
-- ✅ Built an AI-driven wallet assistant that gives real, actionable insights, not just charts
-- ✅ Designed a product that's simple, human, and visually calming in a stressful financial space
-- ✅ Achieved full-stack integration with live dataset analysis, AI prompts, and instant feedback
-- ✅ Worked seamlessly as a four-person team, combining design, product, and engineering like a startup
-- ✅ Created something that feels bigger than a hackathon, a product we'd use ourselves
+The core flow that solves the problem:
 
-## 📚 What We Learned
+- Create a split session
+- Add items (manually or via receipt upload)
+- Assign people to items visually
+- Automatic, accurate calculation
+- Payment request link
+- Paid/pending tracker
 
-We learned that **simplicity is power**. The hardest part of building isn't coding; it's creating something people actually understand and trust. We learned how to use AI responsibly, to assist, not replace human judgment. We also learned that clarity, in design, communication, and product direction, is what turns a project into something meaningful.
+Everything built for trust through precision.
 
-## 🚀 What's Next for SplitIt
+### Phase 2: "Smart Follow-up" (Real Product)
 
-We're just getting started. Next, we're integrating:
+Gentle, personalized reminders based on behavior — not spam.
 
-- 🎯 Smart saving goals based on user patterns
-- 💡 Micro-recommendations for small daily actions that improve financial wellness
-- 💳 Multi-account support to unify all wallets and cards in one view
-- 📈 Personalized advice feed powered by Gemini's contextual understanding
+- "Nudge without awkwardness"
+- Track: link opened, payment marked paid, reminders sent
+- Smart recommendation engine for when to follow up
 
-Our goal is to make SplitIt more than a product—we want it to become a movement for financial clarity. We believe the future belongs to products that help people live intentionally, and we're building that future, one decision at a time.
+### Phase 3: "Trust + History" (Moat)
+
+Build repeat use and retention:
+
+- People profiles: "This is how we usually split"
+- Trip/dinner history
+- Repeat groups (roommates, friend circles, teams)
+- Behavioral data that makes you indispensable
+
+**This is how SplitIt becomes a real company.**
+
+---
+
+## Why SplitIt Is Acquirable
+
+SplitIt becomes valuable because it:
+
+✅ **Owns the moment of shared spending** — highest intent, highest friction point  
+✅ **Builds trust + history + intent data** — unique behavioral layer  
+✅ **Integrates with payments** — Venmo, Stripe, payment processors  
+✅ **Integrates with platforms** — travel apps, event platforms, CRM tools  
+
+**Potential acquirers:**
+
+- Payment apps (Venmo, PayPal)
+- Expense/finance platforms
+- Travel & event platforms
+- Consumer fintech companies
+
+---
+
+## The Best Wedge to Get Real Users
+
+**Start with group dining + trips.**
+
+Why? It's:
+- Frequent (weekly or more)
+- Emotionally painful (money + friendship = awkward)
+- Viral by nature (every split creates new users)
+
+Then expand into:
+- Roommates
+- Clubs & student orgs
+- Small teams
+- Creators & event organizers
+
+---
+
+## How to Build It (Step by Step)
+
+### Step 1: Core Stack (Startup-Grade)
+
+- **Next.js 14** + TypeScript (App Router)
+- **Postgres** (Supabase free tier) or SQLite locally
+- **Prisma** ORM
+- **Clerk** (auth for organizers, optional initially)
+- **Vercel** for deployment
+
+**Recommendation:** Start with Supabase + Vercel for real users.
+
+### Step 2: Data Model (Foundation)
+
+Entities:
+- `User` — organizers
+- `Group` — recurring split group
+- `SplitSession` — individual split
+- `Person` — participant in a session
+- `ReceiptItem` — line item
+- `Assignment` — which person owes for which item
+- `PaymentStatus` — tracking who paid
+
+**Key principle:** Store money as integers (cents), use UUIDs for all IDs.
+
+### Step 3: The Split Engine (Your Secret Sauce)
+
+This is what builds trust.
+
+Rules:
+- Cents only (no floating point)
+- Assigned items charged to assigned people
+- Shared items split evenly
+- Tax/tip distributed proportionally by subtotal
+- **Totals always reconcile to the penny** ← this is the differentiator
+
+### Step 4: Core UI Flow
+
+```
+CreateSession 
+  → AddPeople 
+    → AddItems 
+      → AssignItems 
+        → Totals & PaymentRequest
+```
+
+Design principles:
+- Minimal, calm aesthetic
+- Visual feedback (who owes whom)
+- Empty states that guide users
+- Mobile-first
+
+### Step 5: Share Links (The Growth Mechanic)
+
+No login required for participants. Unguessable tokens.
+
+Generate two links:
+- **Organizer link** — edit, manage, track payments
+- **Participant link** — view your share, mark paid, no account needed
+
+This is how it spreads virally.
+
+### Step 6: Payments Without Being a Bank
+
+You don't need to process payments. You need to make paying easy.
+
+Generate per-person:
+- Venmo payment link + memo
+- Zelle message text
+- Copy button
+
+Later phase: Stripe for direct transfers.
+
+### Step 7: Smart Follow-ups (The Differentiator)
+
+Track events:
+- `link_opened`
+- `payment_marked_paid`
+- `reminder_sent`
+- `reminder_clicked`
+
+Simple rules engine recommends:
+- "Send gentle reminder" 
+- "Wait 24h"
+- "Escalate to organizer"
+
+This is where you look like a real company, not a hackathon project.
+
+### Step 8: Production Security (Minimum Viable Trust)
+
+- Server-side validation with **Zod**
+- No secrets exposed to client
+- Rate limiting on public endpoints
+- Input sanitation
+- Clear security documentation
+
+### Step 9: Deploy & Get Real Users
+
+Launch:
+1. Deploy on Vercel
+2. Post in friend group chats
+3. Recruit from:
+   - College orgs
+   - Professional networks (ColorStack, ALPFA)
+   - Reddit / Product Hunt
+4. Ask: *"Did this feel calmer than Venmo notes?"*
+
+**Growth loop:** Every split creates multiple share links → new users discover it naturally.
+
+---
+
+## 🚀 Features (MVP)
+
+- **📸 Receipt Scanning** — Upload receipt, AI extracts items
+- **👥 Smart Assignment** — Click to assign items to people
+- **💰 Accurate Math** — Handles tax, tip, and partial shares perfectly
+- **🔗 Share Links** — Organizer can edit, participants view their share
+- **📱 Mobile-Friendly** — Works great on phones
+- **✅ Payment Tracking** — See who paid, who hasn't
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
-- **AI**: Google Gemini API for receipt OCR and financial insights
-- **Icons**: Lucide React
-- **Deployment Ready**: Vercel-optimized
+- **Frontend:** Next.js 14, React, TypeScript, TailwindCSS
+- **Backend:** Node.js, Prisma ORM
+- **Database:** Postgres (Supabase)
+- **Auth:** Clerk (optional initially)
+- **AI:** Google Gemini API (receipt OCR)
+- **Deployment:** Vercel
 
-## 🏃‍♂️ Quick Start
+---
 
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+## 🏃 Quick Start
 
-2. **Set up AI (Optional)**:
-   - Get a [Google Gemini API key](https://makersuite.google.com/app/apikey)
-   - Add to `.env.local`:
-     ```
-     GEMINI_API_KEY=your_api_key_here
-     ```
-   - *Note: App works with mock data if no API key is provided*
+```bash
+npm install
+npm run dev
+```
 
-3. **Run the development server**:
-   ```bash
-   npm run dev
-   ```
+Then open `http://localhost:3000`
 
-4. **Open** [http://localhost:3000](http://localhost:3000) in your browser
+---
 
-## 🎯 How It Works
+## 📋 Cursor Command Checklist
 
-### 1. Upload Receipt
-- Take a photo or upload an image of any receipt
-- Supports PNG, JPG formats
-- Works with restaurant bills, grocery receipts, etc.
+Copy/paste these into Cursor to build step by step:
 
-### 2. AI Extraction
-- Advanced AI reads and extracts all items, prices, quantities
-- Automatically calculates subtotal, tax, and total
-- Handles various receipt formats and layouts
+1. **Scaffold:** "Create a Next.js 14 (App Router) + TypeScript project with TailwindCSS, Prisma, and Postgres (Supabase)."
 
-### 3. Add People
-- Add everyone who needs to pay
-- Simple name entry with visual tags
-- Easy to remove people if needed
+2. **Schema:** "Design a Prisma schema for SplitIt with: User, Group, SplitSession, Person, ReceiptItem, Assignment, PaymentStatus. Use UUIDs. Store money in cents."
 
-### 4. Assign Items
-- Click to assign each item to one or more people
-- Share items between multiple people (e.g., shared appetizers)
-- Visual feedback shows who's assigned to what
+3. **Engine:** "Implement computeSplit(session, items, assignments, taxCents, tipCents) that returns per-person totals in cents. Handle rounding deterministically. Add unit tests."
 
-### 5. Calculate & Split
-- Automatic fair splitting based on assignments
-- Tax distributed proportionally
-- Clear breakdown of who owes what
+4. **UI:** "Build the flow: CreateSession → AddPeople → AddItems → AssignItems → Totals. Minimal, calm design."
 
-## 💡 Perfect For
+5. **Sharing:** "Implement unguessable share tokens. Organizer can edit, participants view + mark paid."
 
-- 🍽️ **Restaurant Dinners** - No more "let's just split it evenly"
-- 🛒 **Groceries** - Roommate shopping made fair
-- 🚗 **Road Trips** - Gas, food, and lodging splits
-- 🎉 **Group Events** - Party supplies and venue costs
-- 🏠 **Roommate Bills** - Utilities and shared expenses
-- 🍕 **Office Lunches** - Team meal coordination
+6. **Payments:** "Generate per-person Venmo links + copyable messages with merchant name and amount."
 
-## 🔮 Future Enhancements
+7. **Tracking:** "Add event logging: link_opened, reminder_sent, payment_marked. Create simple rule engine for nudge recommendations."
 
-- **💳 Payment Integration**: Direct Venmo/Zelle request sending
-- **📊 Group Tracking**: "Who owes what over time" dashboard
-- **💾 Receipt History**: Save and revisit past splits
-- **🔗 Share Links**: Send split results via text/email
-- **📱 Mobile App**: Native iOS/Android versions
+8. **Security:** "Add Zod validation, rate limiting, no client secrets, input sanitation."
 
-## 🤝 Contributing
+9. **Deploy:** "Deploy to Vercel with Supabase."
 
-Built for a hackathon but ready for the real world! Feel free to contribute:
+---
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your improvements
-4. Submit a pull request
+## 🏆 Built At
+
+Klaviyo Winter 2026 Hackathon Challenge
+
+---
+
+**You're not selling code. You're selling outcomes.**
 
 ## 📄 License
 
