@@ -1,224 +1,234 @@
 # SplitIt
 
-## The Hook
+## The Core Idea
 
-**Money doesn't ruin moments because of math — it ruins moments because of awkwardness.**
+**SplitIt is building the calm layer for shared money.**
 
-## The Promise
+Not a bill-splitting app.  
+Not a finance tool.  
+Not a calculator.
 
-**SplitIt keeps things fair, clear, and calm when people spend together.**
-
----
-
-## Why Now
-
-We split payments constantly:
-
-- 🍽️ Group dinners
-- ✈️ Trips
-- 🏠 Roommates
-- 🎉 Events
-- 📱 Shared subscriptions
-
-But the tools are either:
-
-- **Too manual** — Venmo notes + calculators = messy, error-prone, awkward
-- **Too heavy** — Finance apps, spreadsheets = overkill for a simple moment
-
-**SplitIt lives in between.**
+A calm layer.
 
 ---
 
-## The Product Vision
+## The Real Problem
 
-### Phase 1: "Calm Split" (MVP)
+Most people think the problem is:
 
-The core flow that solves the problem:
+> "Splitting money is annoying."
 
-- Create a split session
-- Add items (manually or via receipt upload)
-- Assign people to items visually
-- Automatic, accurate calculation
-- Payment request link
-- Paid/pending tracker
+That's not it.
 
-Everything built for trust through precision.
+The real problem is this:
 
-### Phase 2: "Smart Follow-up" (Real Product)
+**Money creates tension when it's shared — not because of numbers, but because of people.**
 
-Gentle, personalized reminders based on behavior — not spam.
+What actually hurts:
 
-- "Nudge without awkwardness"
-- Track: link opened, payment marked paid, reminders sent
-- Smart recommendation engine for when to follow up
+- Reminding friends to pay
+- Correcting unfair splits
+- Feeling taken advantage of
+- Worrying about sounding rude
+- Holding silent resentment
 
-### Phase 3: "Trust + History" (Moat)
+Everyone has felt this.  
+Almost no tool is designed around it.
 
-Build repeat use and retention:
-
-- People profiles: "This is how we usually split"
-- Trip/dinner history
-- Repeat groups (roommates, friend circles, teams)
-- Behavioral data that makes you indispensable
-
-**This is how SplitIt becomes a real company.**
+**SplitIt exists to remove that tension.**
 
 ---
 
-## Why SplitIt Is Acquirable
+## Why Existing Solutions Fail
+
+**Option 1: Manual tools** (Venmo notes, calculators, group chats)
+- Too much thinking
+- Too much back-and-forth
+- Too much awkwardness
+- Easy to mess up
+
+**Option 2: Heavy finance apps**
+- Overkill for simple moments
+- Cold and impersonal
+- Designed for budgets, not relationships
+
+**The gap that SplitIt fills:**
+
+People don't want spreadsheets, dashboards, or long setup.
+
+They want:
+- **Fairness** (the math is right)
+- **Clarity** (everyone knows what they owe)
+- **Peace of mind** (it doesn't become a thing)
+
+Just like Furnished Finder lives between Airbnb and Zillow, SplitIt lives in that gap.
+
+---
+
+## What SplitIt Is Really About
+
+SplitIt is not about money.
+
+**It's about protecting relationships.**
+
+You're building a product that says:
+
+> "This moment doesn't need to be awkward."  
+> "This doesn't need to be stressful."  
+> "This doesn't need to turn into a problem."
+
+That's why people will use it.
+
+---
+
+## What SplitIt Is Today
+
+SplitIt helps people split shared expenses clearly and fairly, without stress.
+
+**Today, SplitIt:**
+
+- Add people and items
+- Assign items visually
+- Calculate exact totals (including tax and tip)
+- Generate clean payment requests
+- Show who's paid and who hasn't
+
+That's it.
+
+And that's intentional.
+
+**Because trust comes from doing one thing extremely well.**
+
+---
+
+## The Long-Term Vision (3 Phases)
+
+### Phase 1: Calm Splitting (Now)
+
+Where you start:
+- Meals
+- Trips
+- Shared purchases
+
+**Success metric:** Users feel the math is fair and the moment stays calm.
+
+### Phase 2: Calm Follow-ups (Next)
+
+Where you add behavior:
+- Smart nudges (gentle, not annoying)
+- Timing-aware reminders
+- Knowing when NOT to remind
+- Organizer peace of mind
+
+**Success metric:** People don't have to think about reminding. SplitIt handles it.
+
+This is where SplitIt becomes sticky.
+
+### Phase 3: The Shared Money Layer (Long-term)
+
+Where you own a category:
+- Roommates
+- Families
+- Events
+- Small teams
+- Recurring group spending
+
+At that point, SplitIt isn't an app you "try once."
+
+**It's something you rely on.**
+
+---
+
+## Why This Is a Real Startup (Not a Side Project)
+
+SplitIt has:
+
+✅ **A clear wedge** — group spending (meals, trips)  
+✅ **A huge repeat market** — happens constantly  
+✅ **Natural viral loop** — every split brings new users via share links  
+✅ **Behavioral data layer** — who pays, when, patterns  
+✅ **Multiple acquisition paths** — payments, fintech, CRM, travel, events  
+
+This is how real companies start:
+
+1. Small surface area (does one thing well)
+2. Deep understanding (owns the moment)
+3. Expanding outward (to adjacent moments)
+
+---
+
+## Why You're Building This (The Authentic Angle)
+
+> "I noticed that when someone fronts money in a group, the stress doesn't come from paying — it comes from everything that happens after. I wanted to build something that removes that tension and keeps things fair without forcing uncomfortable conversations."
+
+That's honest.  
+That's relatable.  
+That's enough.
+
+---
+
+## Your One-Liners (Pick by Audience)
+
+Depending on who you're talking to, use the right framing:
+
+**Ultra-simple** (anyone)  
+"SplitIt helps people handle shared money without stress."
+
+**Product-level** (users, investors)  
+"SplitIt is the calm layer for shared money."
+
+**Founder-level** (investors, founders, operators)  
+"We're building infrastructure for moments where money involves more than one person."
+
+**Interview-level** (recruiting, partnerships)  
+"I started with expense splitting as a wedge, but the long-term goal is to reduce friction and awkwardness in shared financial moments."
+
+---
+
+## How to Talk About Next Steps
+
+When someone asks:
+
+> "What are you working toward?"
+
+You say:
+
+> "Right now, I'm focused on making the core experience incredibly reliable and calm. The next step is adding smart follow-ups so people don't have to think about reminding others. Long term, I want SplitIt to be the default way people handle shared money."
+
+That answer shows:
+- **Focus** (you know what matters now)
+- **Restraint** (you're not building everything at once)
+- **Ambition** (you have a real vision)
+- **Maturity** (you're thinking like a founder)
+
+---
+
+## The Decision Framework for Building
+
+Every feature decision should answer one question:
+
+> **Does this reduce tension, or add it?**
+
+If it adds tension — don't build it yet.
+
+That's how you keep SplitIt honest and useful.
+
+---
+
+## Why This Is Acquirable
 
 SplitIt becomes valuable because it:
 
-✅ **Owns the moment of shared spending** — highest intent, highest friction point  
-✅ **Builds trust + history + intent data** — unique behavioral layer  
-✅ **Integrates with payments** — Venmo, Stripe, payment processors  
-✅ **Integrates with platforms** — travel apps, event platforms, CRM tools  
+✅ **Owns the moment of shared spending**  
+✅ **Builds behavioral data** (know how people handle money together)  
+✅ **Integrates naturally with payments** (Venmo, Stripe, etc.)  
+✅ **Expands into a category** (roommates, teams, families)  
 
 **Potential acquirers:**
-
-- Payment apps (Venmo, PayPal)
-- Expense/finance platforms
+- Payment apps (Venmo, PayPal, Square)
+- Fintech platforms
 - Travel & event platforms
-- Consumer fintech companies
-
----
-
-## The Best Wedge to Get Real Users
-
-**Start with group dining + trips.**
-
-Why? It's:
-- Frequent (weekly or more)
-- Emotionally painful (money + friendship = awkward)
-- Viral by nature (every split creates new users)
-
-Then expand into:
-- Roommates
-- Clubs & student orgs
-- Small teams
-- Creators & event organizers
-
----
-
-## How to Build It (Step by Step)
-
-### Step 1: Core Stack (Startup-Grade)
-
-- **Next.js 14** + TypeScript (App Router)
-- **Postgres** (Supabase free tier) or SQLite locally
-- **Prisma** ORM
-- **Clerk** (auth for organizers, optional initially)
-- **Vercel** for deployment
-
-**Recommendation:** Start with Supabase + Vercel for real users.
-
-### Step 2: Data Model (Foundation)
-
-Entities:
-- `User` — organizers
-- `Group` — recurring split group
-- `SplitSession` — individual split
-- `Person` — participant in a session
-- `ReceiptItem` — line item
-- `Assignment` — which person owes for which item
-- `PaymentStatus` — tracking who paid
-
-**Key principle:** Store money as integers (cents), use UUIDs for all IDs.
-
-### Step 3: The Split Engine (Your Secret Sauce)
-
-This is what builds trust.
-
-Rules:
-- Cents only (no floating point)
-- Assigned items charged to assigned people
-- Shared items split evenly
-- Tax/tip distributed proportionally by subtotal
-- **Totals always reconcile to the penny** ← this is the differentiator
-
-### Step 4: Core UI Flow
-
-```
-CreateSession 
-  → AddPeople 
-    → AddItems 
-      → AssignItems 
-        → Totals & PaymentRequest
-```
-
-Design principles:
-- Minimal, calm aesthetic
-- Visual feedback (who owes whom)
-- Empty states that guide users
-- Mobile-first
-
-### Step 5: Share Links (The Growth Mechanic)
-
-No login required for participants. Unguessable tokens.
-
-Generate two links:
-- **Organizer link** — edit, manage, track payments
-- **Participant link** — view your share, mark paid, no account needed
-
-This is how it spreads virally.
-
-### Step 6: Payments Without Being a Bank
-
-You don't need to process payments. You need to make paying easy.
-
-Generate per-person:
-- Venmo payment link + memo
-- Zelle message text
-- Copy button
-
-Later phase: Stripe for direct transfers.
-
-### Step 7: Smart Follow-ups (The Differentiator)
-
-Track events:
-- `link_opened`
-- `payment_marked_paid`
-- `reminder_sent`
-- `reminder_clicked`
-
-Simple rules engine recommends:
-- "Send gentle reminder" 
-- "Wait 24h"
-- "Escalate to organizer"
-
-This is where you look like a real company, not a hackathon project.
-
-### Step 8: Production Security (Minimum Viable Trust)
-
-- Server-side validation with **Zod**
-- No secrets exposed to client
-- Rate limiting on public endpoints
-- Input sanitation
-- Clear security documentation
-
-### Step 9: Deploy & Get Real Users
-
-Launch:
-1. Deploy on Vercel
-2. Post in friend group chats
-3. Recruit from:
-   - College orgs
-   - Professional networks (ColorStack, ALPFA)
-   - Reddit / Product Hunt
-4. Ask: *"Did this feel calmer than Venmo notes?"*
-
-**Growth loop:** Every split creates multiple share links → new users discover it naturally.
-
----
-
-## 🚀 Features (MVP)
-
-- **📸 Receipt Scanning** — Upload receipt, AI extracts items
-- **👥 Smart Assignment** — Click to assign items to people
-- **💰 Accurate Math** — Handles tax, tip, and partial shares perfectly
-- **🔗 Share Links** — Organizer can edit, participants view their share
-- **📱 Mobile-Friendly** — Works great on phones
-- **✅ Payment Tracking** — See who paid, who hasn't
+- CRM companies wanting consumer behavior data
 
 ---
 
@@ -227,7 +237,7 @@ Launch:
 - **Frontend:** Next.js 14, React, TypeScript, TailwindCSS
 - **Backend:** Node.js, Prisma ORM
 - **Database:** Postgres (Supabase)
-- **Auth:** Clerk (optional initially)
+- **Auth:** Clerk (organizers)
 - **AI:** Google Gemini API (receipt OCR)
 - **Deployment:** Vercel
 
@@ -244,27 +254,59 @@ Then open `http://localhost:3000`
 
 ---
 
-## 📋 Cursor Command Checklist
+## 📋 Core Features (MVP)
 
-Copy/paste these into Cursor to build step by step:
+- **📸 Receipt Scanning** — Upload receipt, AI extracts items automatically
+- **👥 Smart Assignment** — Click to assign items to people visually
+- **💰 Accurate Math** — Handles tax, tip, partial shares, and shared items
+- **🔗 Share Links** — Organizer can edit, participants view + mark paid (no login)
+- **📱 Mobile-Friendly** — Optimized for the moment (phones in restaurants)
+- **✅ Payment Tracking** — See who's paid, who hasn't, pending status
 
-1. **Scaffold:** "Create a Next.js 14 (App Router) + TypeScript project with TailwindCSS, Prisma, and Postgres (Supabase)."
+---
 
-2. **Schema:** "Design a Prisma schema for SplitIt with: User, Group, SplitSession, Person, ReceiptItem, Assignment, PaymentStatus. Use UUIDs. Store money in cents."
+## The Build Checklist
 
-3. **Engine:** "Implement computeSplit(session, items, assignments, taxCents, tipCents) that returns per-person totals in cents. Handle rounding deterministically. Add unit tests."
+Use these Cursor prompts step by step:
 
-4. **UI:** "Build the flow: CreateSession → AddPeople → AddItems → AssignItems → Totals. Minimal, calm design."
+1. **Scaffold:** "Create a Next.js 14 (App Router) + TypeScript project with TailwindCSS, Prisma, and Postgres (Supabase). Production-ready structure."
 
-5. **Sharing:** "Implement unguessable share tokens. Organizer can edit, participants view + mark paid."
+2. **Schema:** "Prisma schema for SplitIt: User, Group, SplitSession, Person, ReceiptItem, Assignment, PaymentStatus. Use UUIDs. Store money as integers (cents)."
 
-6. **Payments:** "Generate per-person Venmo links + copyable messages with merchant name and amount."
+3. **Engine:** "Implement computeSplit(session, items, assignments, taxCents, tipCents) → per-person totals in cents. Deterministic rounding. Unit tests."
 
-7. **Tracking:** "Add event logging: link_opened, reminder_sent, payment_marked. Create simple rule engine for nudge recommendations."
+4. **UI Flow:** "Build: CreateSession → AddPeople → AddItems → AssignItems → Totals. Minimal, calm design. Empty states that guide."
 
-8. **Security:** "Add Zod validation, rate limiting, no client secrets, input sanitation."
+5. **Share Links:** "Unguessable tokens for share access. Organizer: edit. Participant: view + mark paid (no account)."
 
-9. **Deploy:** "Deploy to Vercel with Supabase."
+6. **Payments:** "Generate Venmo links + copyable messages per person. Include merchant, amount, memo."
+
+7. **Event Tracking:** "Log: link_opened, reminder_sent, payment_marked. Simple rules engine for nudge recommendations."
+
+8. **Security:** "Zod validation, rate limiting, no client secrets, input sanitation."
+
+9. **Deploy:** "Vercel + Supabase with CI/CD."
+
+---
+
+## The Honest Assessment
+
+You didn't need a new product.
+
+You needed:
+- A clearer story
+- A believable trajectory
+- A founder-level narrative
+
+Now you have all three.
+
+This is no longer:
+
+> "An app I'm building"
+
+This is:
+
+> **"A company I'm starting."**
 
 ---
 
@@ -274,7 +316,8 @@ Klaviyo Winter 2026 Hackathon Challenge
 
 ---
 
-**You're not selling code. You're selling outcomes.**
+**You're not selling code.  
+You're selling the vision that shared money doesn't have to be awkward.**
 
 ## 📄 License
 
