@@ -28,12 +28,7 @@ We built SplitIt using:
 - **Node.js backend** with real-time data processing
 - **Vercel** for seamless deployment
 
-Our workflow was fully collaborative; design, logic, and testing moved together in sync:
-
-- **Andrew** handled brand design and the clean, modern UI elements
-- **Ruhan** managed the backend, API routes, and database logic
-- **Kunsang** led the TypeScript integration, AI model connections, and overall product direction
-- **Jordan** focused on UX experience and QA testing to ensure everything felt intuitive and responsive
+Our workflow was fully collaborative; design, logic, and testing moved together in sync.
 
 ## ⚠️ Challenges We Ran Into
 
